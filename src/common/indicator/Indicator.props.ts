@@ -1,3 +1,4 @@
 export interface IIndicatorProps {
-  isIndicatorActive: boolean
+  isIndicatorActive?: boolean
+  active?: boolean
 }

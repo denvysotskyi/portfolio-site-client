@@ -1,3 +1,4 @@
 export interface IMessageProps {
-  isModalActive: boolean
+  isModalActive?: boolean
+  active?: boolean
 }

@@ -19,7 +19,7 @@ const Image = styled.img`
   }
 `
 
-const Indicator = observer( () => (
+const Indicator = observer( (): JSX.Element => (
     <ImageWpapper active={siteChange.isIndicatorActive}>
       <Image src={indicator}
              alt={'indicator'}

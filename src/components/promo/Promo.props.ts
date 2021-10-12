@@ -3,5 +3,6 @@ export interface IPromoProps {
 }
 
 export interface IPromoHamburger {
-  isButtonActive: boolean
+  isButtonActive?: boolean
+  active?: boolean
 }

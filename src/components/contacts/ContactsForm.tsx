@@ -4,7 +4,7 @@ import siteChange from '../../store/siteChange'
 import Message from '../../common/message/Message'
 import { Formik } from 'formik'
 import * as Yup from 'yup'
-import * as axios from 'axios'
+const { default: axios } = require('axios')
 
 const Form = styled.form`
   margin-top: 30px;

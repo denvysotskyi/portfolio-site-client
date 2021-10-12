@@ -1,3 +1,4 @@
 export interface IMenu {
-  isMenuActive: boolean
+  isMenuActive?: boolean
+  active?: boolean
 }
