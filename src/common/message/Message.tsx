@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { observer } from 'mobx-react-lite'
 import siteChange from '../../store/siteChange'
+import { IMessageProps } from './Message.props'
 
-const MessageWrapper = styled.div`
+const MessageWrapper = styled.div<IMessageProps>`
   z-index: 3;
   position: fixed;
   background-color: #000;
@@ -13,7 +14,7 @@ const MessageWrapper = styled.div`
   left: 0;
   visibility: ${({isModalActive}) => siteChange.isModalActive ? `visible` : `hidden`};
 `
-const MessageBlock = styled.div`
+const MessageBlock = styled.div<IMessageProps>`
   display: flex;
   justify-content: center;
   align-items: center;

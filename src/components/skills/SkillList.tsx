@@ -35,7 +35,7 @@ const SkillsWrapper = styled.div`
   }
 `
 
-const SkillList = () => (
+const SkillList = (): JSX.Element => (
   <SkillsWrapper>
     <SkillItem src={html5}
                alt={'html5'}

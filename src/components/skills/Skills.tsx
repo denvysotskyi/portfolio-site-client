@@ -69,7 +69,7 @@ const Divider = styled.div`
   margin-top: 22px;
 `
 
-const Skills = () => (
+const Skills = (): JSX.Element => (
     <ScrollableAnchor id={'skills'}>
       <Section>
         <Container>

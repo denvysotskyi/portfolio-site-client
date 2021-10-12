@@ -38,7 +38,7 @@ const Span = styled.span`
   font-size: 17px;
 `
 
-const Sidepanel = () => (
+const Sidepanel = (): JSX.Element => (
     <Aside>
       <Link href={'tel:+38 (068) 001-12-01'}>
         <Image src={phone_rev}
