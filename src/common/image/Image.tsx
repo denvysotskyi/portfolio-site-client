@@ -8,7 +8,7 @@ const StyledImage = styled.img<IImageProps>`
   margin-right: ${({right}) => right};
 `
 
-const Image = ({ src, alt, width, height, right, bottom }: IImageProps) => (
+const Image = ({ src, alt, width, height, right, bottom }: IImageProps): JSX.Element => (
     <StyledImage src={src}
                  alt={alt}
                  width={width}

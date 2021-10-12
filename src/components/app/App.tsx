@@ -9,7 +9,7 @@ import Contacts from '../contacts/Contacts'
 const Body = styled.div`
 `
 
-const App = () => (
+const App = (): JSX.Element => (
     <Body>
       <Sidepanel />
       <Menu />
