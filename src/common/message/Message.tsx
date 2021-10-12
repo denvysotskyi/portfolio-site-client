@@ -71,7 +71,7 @@ const MessageDescr = styled.h3`
 const Break = styled.br`
 `
 
-const Message = observer ( () => (
+const Message = observer ( (): JSX.Element => (
     <MessageWrapper active={siteChange.isModalActive}>
       <MessageBlock active={siteChange.isModalActive}>
         <MessageDescr>
