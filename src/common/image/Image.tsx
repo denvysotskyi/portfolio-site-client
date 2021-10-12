@@ -1,13 +1,21 @@
 import styled from 'styled-components'
 
-const StyledImage = styled.img`
+interface IImageProps {
+  src: string
+  alt: string
+  width: string
+  height: string
+  right: string
+  bottom: string
+}
+const StyledImage = styled.img<IImageProps>`
   width: ${({width}) => width};
   height: ${({height}) => height};
   margin-bottom: ${({bottom}) => bottom};
   margin-right: ${({right}) => right};
 `
 
-const Image = ({ src, alt, width, height, right, bottom }) => (
+const Image = ({ src, alt, width, height, right, bottom }: IImageProps) => (
     <StyledImage src={src}
                  alt={alt}
                  width={width}
