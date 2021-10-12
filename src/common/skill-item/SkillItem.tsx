@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { ISkillItemProps } from './SkillItem.props'
 
 const ItemWrapper = styled.div`
   border: 1px solid #000;
@@ -33,7 +34,7 @@ const SkillsDescr = styled.p`
   line-height: 18px;
 `
 
-const SkillItem = ({ src, alt, title, descr }) => (
+const SkillItem = ({ src, alt, title, descr }: ISkillItemProps): JSX.Element => (
   <ItemWrapper>
     <ImageWrapper>
       <Image src={src}
