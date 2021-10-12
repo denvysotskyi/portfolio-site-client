@@ -12,7 +12,7 @@ const LinksWrapper = styled.div`
 const Link = styled.a`
 `
 
-const ContactsSocial = () => (
+const ContactsSocial = (): JSX.Element => (
   <LinksWrapper>
     <Link href={'https://t.me/denvysotskyi'}
           target={'_blank'}>

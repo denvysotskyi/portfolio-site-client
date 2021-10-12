@@ -108,7 +108,7 @@ const SignupSchema = Yup.object().shape({
   email: Yup.string().email('Неверный email').required('Обязательное поле')
 })
 
-const ContactsForm = observer ( () => (
+const ContactsForm = observer ( (): JSX.Element => (
     <FormWrapper>
       <Message />
       <Formik
@@ -176,12 +176,10 @@ const ContactsForm = observer ( () => (
               <Label htmlFor={'message'}>
                 Ваше сообщение
               </Label>
-              <Textarea
-                type={'text'}
-                name={'message'}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.message}
+              <Textarea name={'message'}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={values.message}
               />
             </TextareaWrapper>
             <ButtonWrapper>

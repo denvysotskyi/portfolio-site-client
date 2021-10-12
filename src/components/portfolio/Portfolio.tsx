@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import { ILink } from './Portfolio.props'
 
 import app from '../../assets/images/works/app.jpg'
 import blog_hor from '../../assets/images/works/blog_hor.png'
@@ -95,7 +96,8 @@ const PortfolioWrapper = styled.div`
     row-gap: 20px;
   }
 `
-const Link = styled.a`
+
+const Link = styled.a<ILink>`
   transition: all 0.6s;
   grid-row: ${({row}) => row};
   grid-column: ${({column}) => column};
@@ -117,7 +119,7 @@ const PortfolioImageVertical = styled(PortfolioImage)`
 const PortfolioImageHorizontal = styled(PortfolioImage)`
 `
 
-const Portfolio = () => (
+const Portfolio = (): JSX.Element => (
     <Section>
       <Container>
         <Title>

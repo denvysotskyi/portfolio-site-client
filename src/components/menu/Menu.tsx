@@ -3,6 +3,7 @@ import { observer } from 'mobx-react-lite'
 import siteChange from '../../store/siteChange'
 import MenuNavigation from './MenuNavigation'
 import Image from '../../common/image/Image'
+import { IMenu } from './Menu.props'
 
 import close from '../../assets/icons/other/close.svg'
 import telegram from '../../assets/icons/social/telegram.svg'
@@ -10,7 +11,8 @@ import linkedin from '../../assets/icons/social/linkedin.png'
 import github from '../../assets/icons/social/github.svg'
 import phone from '../../assets/icons/social/phone.png'
 
-const StyledMenu = styled.div`
+
+const StyledMenu = styled.div<IMenu>`
   position: fixed;
   top: 0;
   left: ${({isMenuActive}) => siteChange.isMenuActive ? `0` : `-100%`};
@@ -67,7 +69,7 @@ const Overlay = styled.div`
   opacity: .7;
 `
 
-const Menu = observer ( () => (
+const Menu = observer ( (): JSX.Element => (
     <StyledMenu active={siteChange.isMenuActive}>
       <Block>
         <Close onClick={() => siteChange.closeMenu()}>

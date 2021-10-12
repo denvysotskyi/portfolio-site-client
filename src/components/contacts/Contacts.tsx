@@ -120,7 +120,7 @@ const LinkTitle = styled.div`
     width: 300px;
   }
 `
-const Contacts = () => (
+const Contacts = (): JSX.Element => (
     <ScrollableAnchor id='contacts'>
       <MyContacts>
         <Container>

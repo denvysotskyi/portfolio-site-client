@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import PromoHamburger from './PromoHamburger'
+import { IPromoProps } from './Promo.props'
 
 import main_photo from '../../assets/images/main_photo.jpg'
 import main_photo_small from '../../assets/images/main_photo_small.jpg'
@@ -92,7 +93,7 @@ const Subtitle = styled.div`
     margin-top: 17px;
   }
 `
-const Button = styled.div`
+const Button = styled.div<IPromoProps>`
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
@@ -124,7 +125,7 @@ const Link = styled.a`
 const Br = styled.br`
 `
 
-const Promo = () => (
+const Promo = (): JSX.Element => (
     <Section>
       <PromoHamburger />
       <Container>

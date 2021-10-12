@@ -40,7 +40,7 @@ const Link = styled.a`
   href: ${({href}) => href};
 `
 
-const MenuNavigation = observer ( () => (
+const MenuNavigation = observer ( (): JSX.Element => (
     <Nav>
       <List>
         <Li>

@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { observer } from 'mobx-react-lite'
 import siteChange from '../../store/siteChange'
+import { IPromoProps, IPromoHamburger } from './Promo.props'
 
-const StyledHamburger = styled.div`
+const StyledHamburger = styled.div<IPromoHamburger>`
   position: absolute;
   top: 20px;
   right: 30px;
@@ -16,14 +17,14 @@ const StyledHamburger = styled.div`
     right: 20px;
   }
 `
-const Span = styled.span`
+const Span = styled.span<IPromoProps>`
 display: block;
 width: ${({width}) => width};
 height: 3px;
 background-color: #000;
 `
 
-const PromoHamburger = observer ( () => (
+const PromoHamburger = observer ( (): JSX.Element => (
     <StyledHamburger active={siteChange.isButtonActive}
                      onClick={() => siteChange.openMenu()}>
       <Span width={'30px'} />
