@@ -4,9 +4,11 @@ import SkillItem from '../../common/skill-item/SkillItem'
 import html5 from '../../assets/icons/skills/html5.svg'
 import css3 from '../../assets/icons/skills/css3.svg'
 import ts from '../../assets/icons/skills/ts.svg'
+import angular from '../../assets/icons/skills/angular.svg'
 import react from '../../assets/icons/skills/react.svg'
 import redux from '../../assets/icons/skills/redux.svg'
 import nodejs from '../../assets/icons/skills/nodejs.svg'
+import nestjs from '../../assets/icons/skills/nestjs.svg'
 import express from '../../assets/icons/skills/express.svg'
 import graphql from '../../assets/icons/skills/graphql.svg'
 import mongodb from '../../assets/icons/skills/mongodb.svg'
@@ -46,37 +48,43 @@ const SkillList = (): JSX.Element => (
     <SkillItem src={css3}
                alt={'css3'}
                title={'CSS3'}
-               descr={`Этот язык стилей позволяет создать абсолютно любой внешний вид приложения.
+               descr={`Язык стилей позволяет создать абсолютно любой внешний вид приложения.
                       Всё ограничивается лишь фантазией.`}
     />
     <SkillItem src={ts}
                alt={'ts'}
                title={'TypeScript'}
-               descr={`Это строго типизированный язык, уменьшающий количество потенциальных ошибок, которые
+               descr={`Строго типизированный язык, уменьшающий количество потенциальных ошибок, которые
                       могли бы возникнуть при разработке на JavaScript.`}
+    />
+    <SkillItem src={angular}
+               alt={'angular'}
+               title={'Angular'}
+               descr={`Платформа для разработки мобильных и десктопных веб-приложений, написанная на языке
+                      TypeScript.`}
     />
     <SkillItem src={react}
                alt={'react'}
                title={'React'}
-               descr={`Библиотека, позволяющая создавать приложения. С её помощью возможно создать максимально
+               descr={`Библиотека, позволяющая создавать веб-приложения. С её помощью возможно создать максимально
                       интерактивный продукт.`}
     />
     <SkillItem src={redux}
                alt={'redux'}
                title={'Redux'}
                descr={`Библиотека, предназначенная для управления состоянием приложения. Она значительно упрощает
-                      передачу данных хранилища через контекст.`}
+                      передачу данных.`}
     />
     <SkillItem src={nodejs}
                alt={'nodejs'}
-               title={'Node.js'}
+               title={'Node'}
                descr={`Программная платформа, превращающая JavaScript из узкоспециализированного языка в язык
                       общего назначения.`}
     />
-    <SkillItem src={express}
-               alt={'express'}
-               title={'Express'}
-               descr={`Фреймворк для Node.js, спроектированный для создания приложений и API.`}
+    <SkillItem src={nestjs}
+               alt={'nestjs'}
+               title={'Nest'}
+               descr={`Фреймворк для Node.js на языке TypeScript. Данный фреймворк основан на Express.`}
     />
     <SkillItem src={graphql}
                alt={'graphql'}
