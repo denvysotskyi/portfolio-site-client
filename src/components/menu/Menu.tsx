@@ -8,9 +8,9 @@ import { IMenu } from './Menu.props'
 import close from '../../assets/icons/other/close.svg'
 import telegram from '../../assets/icons/social/telegram.svg'
 import linkedin from '../../assets/icons/social/linkedin.png'
+import bitbucket from '../../assets/icons/social/bitbucket.svg'
 import github from '../../assets/icons/social/github.svg'
 import phone from '../../assets/icons/social/phone.png'
-
 
 const StyledMenu = styled.div<IMenu>`
   position: fixed;
@@ -45,7 +45,7 @@ const Close = styled.div`
 `
 const Social = styled.div`
   position: absolute;
-  left: 37%;
+  left: 30%;
   bottom: 5%;
   transform: translateX(-50%);
   width: 130px;
@@ -53,7 +53,7 @@ const Social = styled.div`
   justify-content: space-between;
   align-items: center;
   @media ${props => props.theme.media.phone} {
-    left: 36%;
+    left: 35%;
     bottom: 18%;
   }
 `
@@ -92,6 +92,15 @@ const Menu = observer ( (): JSX.Element => (
                 target={'_blank'}>
             <Image src={linkedin}
                    alt='linkedin'
+                   right={'15px'}
+                   width={'40px'}
+                   height={'40px'}
+            />
+          </Link>
+          <Link href={'https://bitbucket.org/denvysotskyi'}
+                target={'_blank'}>
+            <Image src={bitbucket}
+                   alt='bitbucket'
                    right={'15px'}
                    width={'40px'}
                    height={'40px'}

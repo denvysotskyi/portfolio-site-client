@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { ILink } from './Portfolio.props'
 
-import app from '../../assets/images/works/app.jpg'
 import blog_hor from '../../assets/images/works/blog_hor.png'
 import make_app from '../../assets/images/works/make_app.jpg'
 import todos from '../../assets/images/works/todos.png'
 import chat_vert from '../../assets/images/works/chat_vert.png'
 import messenger from '../../assets/images/works/messenger.png'
+import blog from '../../assets/images/works/blog.png'
 
 const Section = styled.section`
   padding-top: 120px;
@@ -143,9 +143,11 @@ const Portfolio = (): JSX.Element => (
                                 alt={'make_app'}
                 />
               </Link>
-              <Link href={'/#'}>
-                <PortfolioImage src={app}
-                                alt={'app'}
+              <Link href={'https://blog-app-amber.vercel.app'}
+                    target={'_blank'}
+              >
+                <PortfolioImage src={blog}
+                                alt={'blog'}
                 />
               </Link>
               <Link href={'https://chat-app-client-three.vercel.app'}

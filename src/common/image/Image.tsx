@@ -6,6 +6,11 @@ const StyledImage = styled.img<IImageProps>`
   height: ${({height}) => height};
   margin-bottom: ${({bottom}) => bottom};
   margin-right: ${({right}) => right};
+  @media ${props => props.theme.media.phone} {
+    right: 10px;
+    width: 30px;
+    height: 30px;
+  }
 `
 
 const Image = ({ src, alt, width, height, right, bottom }: IImageProps): JSX.Element => (

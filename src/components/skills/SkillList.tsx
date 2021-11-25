@@ -5,11 +5,12 @@ import html5 from '../../assets/icons/skills/html5.svg'
 import css3 from '../../assets/icons/skills/css3.svg'
 import ts from '../../assets/icons/skills/ts.svg'
 import angular from '../../assets/icons/skills/angular.svg'
+import ngrx from '../../assets/icons/skills/ngrx.svg'
 import react from '../../assets/icons/skills/react.svg'
 import redux from '../../assets/icons/skills/redux.svg'
+import mobx from '../../assets/icons/skills/mobx.svg'
 import nodejs from '../../assets/icons/skills/nodejs.svg'
 import nestjs from '../../assets/icons/skills/nestjs.svg'
-import express from '../../assets/icons/skills/express.svg'
 import graphql from '../../assets/icons/skills/graphql.svg'
 import mongodb from '../../assets/icons/skills/mongodb.svg'
 
@@ -63,6 +64,12 @@ const SkillList = (): JSX.Element => (
                descr={`Платформа для разработки мобильных и десктопных веб-приложений, написанная на языке
                       TypeScript.`}
     />
+    <SkillItem src={ngrx}
+               alt={'ngrx'}
+               title={'NgRx'}
+               descr={`Библиотека реализует принцип работы Redux для Angular приложений. Она централизует и делает
+                максимально понятным управление всеми состояниями приложения.`}
+    />
     <SkillItem src={react}
                alt={'react'}
                title={'React'}
@@ -74,6 +81,12 @@ const SkillList = (): JSX.Element => (
                title={'Redux'}
                descr={`Библиотека, предназначенная для управления состоянием приложения. Она значительно упрощает
                       передачу данных.`}
+    />
+    <SkillItem src={mobx}
+               alt={'mobx'}
+               title={'MobX'}
+               descr={`Библиотека, которая делает управление состоянием простым и масштабируемым за счет прозрачного
+                      применения функционального реактивного программирования.`}
     />
     <SkillItem src={nodejs}
                alt={'nodejs'}

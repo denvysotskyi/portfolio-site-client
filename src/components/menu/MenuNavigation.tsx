@@ -7,7 +7,10 @@ const Nav = styled.nav`
 const List = styled.ul`
   text-transform: uppercase;
   list-style-type: none;
-  margin-left: 40px;
+  margin-left: 30px;
+  @media ${props => props.theme.media.phone} {
+    margin-left: 10px;
+  }
 `
 const Li = styled.li`
   position: relative;
