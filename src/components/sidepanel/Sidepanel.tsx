@@ -3,6 +3,7 @@ import Image from '../../common/image/Image'
 
 import phone_rev from '../../assets/icons/social/phone_rev.png'
 import github_rev from '../../assets/icons/social/github_rev.png'
+import bitbucket_rev from '../../assets/icons/social/bitbucket_rev.png'
 import linkedin_rev from '../../assets/icons/social/linkedin_rev.png'
 import telegram_rev from '../../assets/icons/social/telegram_rev.png'
 
@@ -34,7 +35,7 @@ const Description = styled.div`
 const Span = styled.span`
   display: block;
   width: 150px;
-  transform: rotate(-90deg) translate(-39%, -255%);
+  transform: rotate(-90deg) translate(-41%, -250%);
   font-size: 17px;
 `
 
@@ -48,8 +49,19 @@ const Sidepanel = (): JSX.Element => (
                height={'30px'}
         />
       </Link>
+      <Link href={'https://bitbucket.org/denvysotskyi'}
+            target={'_blank'}
+      >
+        <Image src={bitbucket_rev}
+               alt={'bitbucket_rev'}
+               bottom={'6px'}
+               width={'30px'}
+               height={'30px'}
+        />
+      </Link>
       <Link href={'https://github.com/denvysotskyi'}
-            target={'_blank'}>
+            target={'_blank'}
+      >
         <Image src={github_rev}
                alt={'github'}
                bottom={'6px'}
@@ -58,7 +70,8 @@ const Sidepanel = (): JSX.Element => (
         />
       </Link>
       <Link href={'https://www.linkedin.com/in/denvysotskyi'}
-            target={'_blank'}>
+            target={'_blank'}
+      >
         <Image src={linkedin_rev}
                alt={'linkedin'}
                bottom={'7px'}
@@ -68,10 +81,11 @@ const Sidepanel = (): JSX.Element => (
         />
       </Link>
       <Link href={'https://t.me/denvysotskyi'}
-            target={'_blank'}>
+            target={'_blank'}
+      >
         <Image src={telegram_rev}
                alt={'telegram'}
-               bottom={'5px'}
+               bottom={'7px'}
                width={'30px'}
                height={'30px'}
         />

@@ -80,7 +80,8 @@ const Menu = observer ( (): JSX.Element => (
         <MenuNavigation />
         <Social>
           <Link href={'https://t.me/denvysotskyi'}
-                target={'_blank'}>
+                target={'_blank'}
+          >
             <Image src={telegram}
                    alt={'telegram'}
                    right={'15px'}
@@ -89,7 +90,8 @@ const Menu = observer ( (): JSX.Element => (
             />
           </Link>
           <Link href={'https://www.linkedin.com/in/denvysotskyi'}
-                target={'_blank'}>
+                target={'_blank'}
+          >
             <Image src={linkedin}
                    alt='linkedin'
                    right={'15px'}
@@ -98,7 +100,8 @@ const Menu = observer ( (): JSX.Element => (
             />
           </Link>
           <Link href={'https://bitbucket.org/denvysotskyi'}
-                target={'_blank'}>
+                target={'_blank'}
+          >
             <Image src={bitbucket}
                    alt='bitbucket'
                    right={'15px'}
@@ -107,7 +110,8 @@ const Menu = observer ( (): JSX.Element => (
             />
           </Link>
           <Link href={'https://github.com/denvysotskyi'}
-                target={'_blank'}>
+                target={'_blank'}
+          >
             <Image src={github}
                    alt='github'
                    right={'15px'}
