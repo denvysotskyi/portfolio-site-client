@@ -1,6 +1,6 @@
 ### Description of application
 
-This app - my portfolio site that tells about me and my works. It made with React.
+This app - my portfolio site that tells about me and my works. It made on React.
 
 ### Stay in touch
 
