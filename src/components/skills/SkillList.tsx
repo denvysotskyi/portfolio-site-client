@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import SkillItem from '../../common/skill-item/SkillItem'
 
+import csharp from '../../assets/icons/skills/csharp.svg'
+import dotnet from '../../assets/icons/skills/dotnet.svg'
 import html5 from '../../assets/icons/skills/html5.svg'
 import css3 from '../../assets/icons/skills/css3.svg'
 import ts from '../../assets/icons/skills/ts.svg'
@@ -11,7 +13,7 @@ import redux from '../../assets/icons/skills/redux.svg'
 import mobx from '../../assets/icons/skills/mobx.svg'
 import nodejs from '../../assets/icons/skills/nodejs.svg'
 import nestjs from '../../assets/icons/skills/nestjs.svg'
-import graphql from '../../assets/icons/skills/graphql.svg'
+import postgresql from '../../assets/icons/skills/postgresql.svg'
 import mongodb from '../../assets/icons/skills/mongodb.svg'
 
 const SkillsWrapper = styled.div`
@@ -40,6 +42,17 @@ const SkillsWrapper = styled.div`
 
 const SkillList = (): JSX.Element => (
   <SkillsWrapper>
+    <SkillItem src={csharp}
+               alt={'c#'}
+               title={'C#'}
+               descr={`Объектно-ориентированный язык программирования с безопасной системой типизации для платформы 
+                      .NET.`}
+    />
+    <SkillItem src={dotnet}
+               alt={'.net'}
+               title={'.NET'}
+               descr={`.NET - это платформа от Microsoft, которая позволяет создавать программные приложения.`}
+    />
     <SkillItem src={html5}
                alt={'html5'}
                title={'HTML5'}
@@ -99,10 +112,10 @@ const SkillList = (): JSX.Element => (
                title={'Nest'}
                descr={`Фреймворк для Node.js на языке TypeScript. Данный фреймворк основан на Express.`}
     />
-    <SkillItem src={graphql}
-               alt={'graphql'}
-               title={'GraphQL'}
-               descr={`Это язык запросов для API-интерфейсов и среда, в которой они выполняются.`}
+    <SkillItem src={postgresql}
+               alt={'postgresql'}
+               title={'PostgreSQL'}
+               descr={`Cвободная объектно-реляционная система управления базами данных (СУБД).`}
     />
     <SkillItem src={mongodb}
                alt={'mongodb'}
